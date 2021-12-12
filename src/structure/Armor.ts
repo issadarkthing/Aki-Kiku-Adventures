@@ -7,10 +7,10 @@ export abstract class Armor extends BaseArmor {
 
   static get all(): Armor[] {
     return [
-      new Helmet(),
-      new ChestPlate(),
-      new Leggings(),
-      new Boots(),
+      new GoldHaori(),
+      new VampireSlayerOutfit(),
+      new ShogunArmor(),
+      new AstronautSuit(),
     ];
   }
 
@@ -40,30 +40,30 @@ export abstract class Armor extends BaseArmor {
 }
 
 
-export class Helmet extends Armor {
+export class GoldHaori extends Armor {
   id = "helmet";
-  name = "Helmet";
+  name = "Gold Haori";
   price = 8500;
   armor = 0.005
 }
 
-export class ChestPlate extends Armor {
+export class VampireSlayerOutfit extends Armor {
   id = "chest_plate";
-  name = "Chest Plate";
+  name = "Vampire Slayer Outfit";
   price = 5000;
   armor = 0.006
 }
 
-export class Leggings extends Armor {
+export class ShogunArmor extends Armor {
   id = "leggings";
-  name = "Leggings";
+  name = "Shogun Armor";
   price = 4500;
   armor = 0.008
 }
 
-export class Boots extends Armor {
+export class AstronautSuit extends Armor {
   id = "boots";
-  name = "Boots";
+  name = "Astronaut Suit";
   price = 5500;
   armor = 0.011
 }
