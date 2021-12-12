@@ -3,6 +3,7 @@ import { Armor } from "./Armor";
 import { Weapon } from "./Weapon";
 import { Pet } from "./Pet";
 import { Skill } from "./Skill";
+import { Perks } from "./Perks";
 
 export abstract class Item {
   abstract name: string;
@@ -16,6 +17,7 @@ export abstract class Item {
       ...Weapon.all,
       ...Pet.all,
       ...Skill.all,
+      ...Perks.all,
     ];
   }
 }
