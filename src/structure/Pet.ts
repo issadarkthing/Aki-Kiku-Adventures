@@ -7,13 +7,13 @@ export abstract class Pet extends BasePet {
 
   static get all(): Pet[] {
     return [
+      new Dog(),
       new Monkey(),
       new Penguin(),
       new BlueBird(),
       new Pigeon(),
       new BeardedDragon(),
       new BabyDragon(),
-      new Dog(),
     ];
   }
 
@@ -91,6 +91,6 @@ export class Dog extends Pet {
   id = "dog";
   attack = 10;
   interceptRate = 0.35;
-  price = 60000;
+  price = 4000;
 }
 
