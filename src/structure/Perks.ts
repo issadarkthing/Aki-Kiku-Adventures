@@ -61,5 +61,5 @@ export class RaffleTicket extends Perks {
 export class FreeNFT extends Perks {
   id = "free-nft";
   name = "Free NFT";
-  price = 30000;
+  price = 75000;
 }
