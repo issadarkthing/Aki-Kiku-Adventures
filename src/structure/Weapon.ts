@@ -7,10 +7,10 @@ export abstract class Weapon extends BaseWeapon {
 
   static get all(): Weapon[] {
     return [
-      new Axe(),
-      new Sword(),
-      new Dagger(),
-      new Mace(),
+      new RaydiumPlasmaGun(),
+      new BagofSwords(),
+      new WaterAxe(),
+      new GrapeSword(),
     ];
   }
 
@@ -40,30 +40,30 @@ export abstract class Weapon extends BaseWeapon {
 }
 
 
-class Axe extends Weapon {
+class RaydiumPlasmaGun extends Weapon {
   id = "axe";
-  name = "Axe";
+  name = "Radium Plasma Gun";
   attack = 20;
   price = 1000;
 }
 
-class Sword extends Weapon {
+class BagofSwords extends Weapon {
   id = "sword";
-  name = "Sword";
+  name = "Bag of Swords";
   attack = 30;
   price = 2000;
 }
 
-class Dagger extends Weapon {
+class WaterAxe extends Weapon {
   id = "dagger";
-  name = "Dagger";
+  name = "Water Axe";
   attack = 40;
   price = 3000;
 }
 
-class Mace extends Weapon {
+class GrapeSword extends Weapon {
   id = "mace";
-  name = "Mace";
+  name = "Grape Sword";
   attack = 45;
   price = 3500;
 }
