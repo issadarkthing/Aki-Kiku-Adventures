@@ -10,8 +10,8 @@ export abstract class Perks implements Item {
 
   static get all(): Perks[] {
     return [
-      new WhiteList(),
       new RaffleTicket(),
+      new WhiteList(),
       new FreeNFT(),
     ];
   }
@@ -46,20 +46,20 @@ export abstract class Perks implements Item {
   }
 }
 
-export class WhiteList extends Perks {
-  id = "whitelist";
-  name = "Whitelist Scroll";
-  price = 10000;
-}
-
 export class RaffleTicket extends Perks {
   id = "raffle-ticket";
   name = "Raffle Ticket";
-  price = 20000;
+  price = 2500;
+}
+
+export class WhiteList extends Perks {
+  id = "whitelist";
+  name = "Whitelist Scroll";
+  price = 5000;
 }
 
 export class FreeNFT extends Perks {
   id = "free-nft";
   name = "Free NFT";
-  price = 75000;
+  price = 30000;
 }
